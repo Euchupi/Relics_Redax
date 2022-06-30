@@ -4,7 +4,7 @@ import os
 username='daq'
 password=os.environ['MONGO_DAQ_PASSWORD']
 
-host=192.168.1.18
+host="192.168.1.18"
 port=27017
 auth_database='admin'
 database='daq'
