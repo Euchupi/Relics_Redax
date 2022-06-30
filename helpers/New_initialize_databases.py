@@ -12,6 +12,8 @@ client=MongoClient(f'mongodb://{host}:{port}/{auth_database}')
 
 db = client[database]
 
+print("Current Collections{}".format(db.list_collection_names()))
+
 # aggregate status
 db.create_collection('aggregate_status')
 db.aggregate_status.create_index([('detector', 1), ('_id', -1)])
